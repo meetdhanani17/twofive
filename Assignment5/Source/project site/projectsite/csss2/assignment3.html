@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <link rel="stylesheet" href="../style1.css">
+
+    </link>
+    <style>
+        .im {
+            margin: 0;
+        }
+
+        body {
+            background-color: #faebd7;
+        }
+
+        .main {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .parent {
+            position: relative;
+            background-color: whitesmoke;
+            width: 100%;
+            height: 210px;
+            margin: 15px 15px;
+            border-radius: 3%;
+        }
+
+
+        @media only screen and (min-width: 888px) {
+            .parent {
+                width: calc(100% / 2 - 45px);
+            }
+        }
+
+        @media only screen and (min-width: 1188px) {
+            .parent {
+                width: calc(100% / 3 - 30px);
+            }
+        }
+
+        @media only screen and (min-width: 1161px) {
+
+            .parent {
+                width: calc(100% / 3 - 45px);
+
+            }
+        }
+
+        @media only screen and (min-width: 1261px) {
+
+            .parent {
+                width: calc(100% / 3 - 30px);
+
+            }
+        }
+
+        @media only screen and (min-width: 1500px) {
+            .parent {
+                width: calc(100% / 4 - 30px);
+
+            }
+        }
+
+        b {
+            color: cadetblue;
+        }
+
+        .div1 {
+            padding: 15px 2px 0px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: initial;
+        }
+
+        .div2 {
+            padding: 0px 2px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image1 {
+            margin-left: 10px;
+            height: 60px;
+            border: 2px solid #008080;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .image2 {
+            border: 2px solid #008080;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 10%;
+            overflow: hidden;
+        }
+
+        .text1 {
+
+            margin-top: 4px;
+            float: right;
+
+        }
+
+        .text2 {
+            margin-top: 4px;
+            float: left;
+        }
+
+        strong {
+            color: #008080;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .a {
+            color: #74797f;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="image">
+            <image width="70px" height="100%"
+                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nlyp3wginjtr4jee8zon"
+                alt="radix logo"></image>
+        </div>
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="../html.html">HTML</a>
+            <a href="../css.html">CSS</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">JavaScript</a>
+            <a href="#">JQuery</a>
+            <a href="#">Mini Project</a>
+            <a href="#">SQL</a>
+        </div>
+
+    </div>
+    <div class="page">
+        <div class="sidebar">
+            <ul>
+                <li>Day1</li>
+                <ul>
+                    <li>Assignment</li>
+                    <ul>
+                        <li><a href="../csss1/assignment1.html">Assignment 1</a></li>
+                        <li><a href="../csss1/assignment2.html">Assignment 2</a></li>
+                        <li><a href="../csss1/assignment3.html">Assignment 3</a></li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Practice</li>
+                    <ul>
+                        <li><a href="../csss1/practice1.html">Practice 1</a></li>
+                        <li><a href="../csss1/practice2.html">Practice 2</a></li>
+                        <li><a href="../csss1/practice3.html">Practice 3</a></li>
+                        <li><a href="../csss1/practice4.html">Practice 4</a></li>
+                    </ul>
+                </ul>
+            </ul>
+            <ul>
+                <li>Day2</li>
+                <ul>
+                    <li>Assignment</li>
+                    <ul>
+                        <li><a href="assignment1.html">Assignment 1</a></li>
+                        <li><a href="assignment2.html">Assignment 2</a></li>
+                        <li><a href="assignment3.html">Assignment 3</a></li>
+                        <li><a href="assignment4.html">Assignment 4</a></li>
+                        <li><a href="assignment5.html">Assignment 5</a></li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Practice</li>
+                    <ul>
+                        <li><a href="practice1.html">Practice 1</a></li>
+                        <li><a href="practice2.html">Practice 2</a></li>
+                        <li><a href="practice3.html">Practice 3</a></li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="im">
+            <div class="main">
+
+                <div class="parent">
+                    <div class="div1">
+                        <div class="image1">
+                            <image width=60px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                        <div class="text1">
+                            <p><strong>Student Id : </strong>1</p>
+                            <p><strong>Name : </strong>Hohn Doe</p>
+                            <p><strong>Date of Birth : </strong>25-08-1998</p>
+                        </div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="text2">
+                            <p><strong>Collage Name : </strong>1</p>
+                            <p><strong>Collage Address : </strong>Jetal Pur</p>
+                        </div>
+                        <div class="image2">
+                            <image width=40px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                    </div>
+                    <div class="footer"><a class="a" href="details.html">Show More</a></div>
+                </div>
+                <div class="parent">
+                    <div class="div1">
+                        <div class="image1">
+                            <image width=60px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                        <div class="text1">
+                            <p><strong>Student Id : </strong>1</p>
+                            <p><strong>Name : </strong>Hohn Doe</p>
+                            <p><strong>Date of Birth : </strong>25-08-1998</p>
+                        </div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="text2">
+                            <p><strong>Collage Name : </strong>1</p>
+                            <p><strong>Collage Address : </strong>Jetal Pur</p>
+                        </div>
+                        <div class="image2">
+                            <image width=40px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                    </div>
+                    <div class="footer"><a class="a" href="details.html">Show More</a></div>
+                </div>
+                <div class="parent">
+                    <div class="div1">
+                        <div class="image1">
+                            <image width=60px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                        <div class="text1">
+                            <p><strong>Student Id : </strong>1</p>
+                            <p><strong>Name : </strong>Hohn Doe</p>
+                            <p><strong>Date of Birth : </strong>25-08-1998</p>
+                        </div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="text2">
+                            <p><strong>Collage Name : </strong>1</p>
+                            <p><strong>Collage Address : </strong>Jetal Pur</p>
+                        </div>
+                        <div class="image2">
+                            <image width=40px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                    </div>
+                    <div class="footer"><a class="a" href="details.html">Show More</a></div>
+                </div>
+
+                <div class="parent">
+                    <div class="div1">
+                        <div class="image1">
+                            <image width=60px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                        <div class="text1">
+                            <p><strong>Student Id : </strong>1</p>
+                            <p><strong>Name : </strong>Hohn Doe</p>
+                            <p><strong>Date of Birth : </strong>25-08-1998</p>
+                        </div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="text2">
+                            <p><strong>Collage Name : </strong>1</p>
+                            <p><strong>Collage Address : </strong>Jetal Pur</p>
+                        </div>
+                        <div class="image2">
+                            <image width=40px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                    </div>
+                    <div class="footer"><a class="a" href="details.html">Show More</a></div>
+                </div>
+                <div class="parent">
+                    <div class="div1">
+                        <div class="image1">
+                            <image width=60px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                        <div class="text1">
+                            <p><strong>Student Id : </strong>1</p>
+                            <p><strong>Name : </strong>Hohn Doe</p>
+                            <p><strong>Date of Birth : </strong>25-08-1998</p>
+                        </div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="text2">
+                            <p><strong>Collage Name : </strong>1</p>
+                            <p><strong>Collage Address : </strong>Jetal Pur</p>
+                        </div>
+                        <div class="image2">
+                            <image width=40px
+                                Src="https://partneraggregatoreastsa.blob.core.windows.net/publishedlogos/08631ba4-6505-4518-8291-34ba97d86c59_952cbe8d-3138-44d4-830c-490cd788f83d"
+                                alt="photo"></image>
+                        </div>
+                    </div>
+                    <div class="footer"><a class="a" href="details.html">Show More</a></div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
